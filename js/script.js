@@ -24,8 +24,9 @@
 // Pari e Dispari
 
 //1. L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
-// var bet = prompt("Pari o dispari?");
-// var numberG = parseInt(prompt("Inserisci un numero da 1 a 5"));
+var bet = prompt("Pari o dispari?");
+var numberG = parseInt(prompt("Inserisci un numero da 1 a 5"));
+console.log(numberG);
 //2. Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 function randomCPU(nmin, nmax) {
   var random = Math.floor(Math.random() * nmax + nmin);
@@ -36,8 +37,21 @@ function randomCPU(nmin, nmax) {
 
 //3. Sommiamo i due numeri
 var sum = numberG + numberCPU;
+console.log(sum);
 //4. Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+var pari = true;
+function paridispari(num) {
+  if (num % 2 != 0) {
+    var pari = false;
+  }
+}
 
+var game = paridispari(sum);
+if ((bet == "Pari") && (pari == true)) {
+  console.log("Complimenti, hai vinto!");
+} else {
+  console.log("Mi dispiace, hai perso");
+}
 // Dichiariamo chi ha vinto.
 // Consigli del giorno
 // 1. Scriviamo sempre in italiano i passaggi che vogliamo fare
