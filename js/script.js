@@ -1,25 +1,25 @@
 
 // //1. Chiedere all’utente di inserire una parola
-// var parola = prompt("Inserisci una parola e ti diremo se è palindroma");
-// console.log(parola);
-//
+var parola = prompt("Inserisci una parola e ti diremo se è palindroma");
+console.log(parola);
+
 // //2. Creare una funzione per capire se la parola inserita è palindroma
-// var condizione = false;
-// function palindromo(letterA, letterZ) {
-//    if (letterA === letterZ) {
-//      condizione = true;
-//    }
-// }
+var condizione = false;
+function palindromo(letterA, letterZ) {
+   if (letterA === letterZ) {
+     condizione = true;
+   }
+}
 // //3. Applicare un ciclo per il confronto di tutte le lettere della parola
-// for (var i = 0; i <= parola.length / 2; i++ ) {
-//   var corrispondenza = palindromo(parola[i], parola[parola.length-1-i]);
-// }
+for (var i = 0; i <= parola.length / 2; i++ ) {
+  var corrispondenza = palindromo(parola[i], parola[parola.length-1-i]);
+}
 // //4. Stampare il risultato
-// if (condizione == false) {
-//   alert("La parola NON è palindroma.");
-// } else {
-//   alert("La parola è palindroma.")
-// }
+if (condizione == false) {
+  alert("La parola NON è palindroma.");
+} else {
+  alert("La parola è palindroma.")
+}
 
 // Pari e Dispari
 
