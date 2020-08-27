@@ -39,20 +39,20 @@ function randomCPU(nmin, nmax) {
 var sum = numberG + numberCPU;
 console.log(sum);
 //4. Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-var pari = true;
+var pari = 0;
 function paridispari(num) {
   if (num % 2 != 0) {
-    var pari = false;
+    pari += 1;
   }
 }
-
+//5. Dichiariamo chi ha vinto.
 var game = paridispari(sum);
-if ((bet == "Pari") && (pari == true)) {
+if ((bet == "Pari") && (pari == 0)) {
   console.log("Complimenti, hai vinto!");
 } else {
   console.log("Mi dispiace, hai perso");
 }
-// Dichiariamo chi ha vinto.
+
 // Consigli del giorno
 // 1. Scriviamo sempre in italiano i passaggi che vogliamo fare
 // 2. Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
